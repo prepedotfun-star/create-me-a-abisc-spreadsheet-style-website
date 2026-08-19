@@ -122,7 +122,7 @@ const CellsLayer = memo(function CellsLayer({
           key={c}
           data-cell={id}
           className={
-            'flex items-center overflow-hidden whitespace-nowrap border-b border-r border-slate-200 px-1.5 text-[13px] leading-none text-slate-800' +
+            'flex items-center overflow-hidden whitespace-nowrap border-b border-r border-emerald-200 bg-emerald-100 px-1.5 text-[13px] leading-none text-slate-800' +
             (errorCell ? ' text-red-600' : '')
           }
           style={{ width: colX[c + 1] - colX[c], height: rowHeight, ...st }}
@@ -367,7 +367,7 @@ export function Grid(props: GridProps) {
     <div
       ref={gridRef}
       tabIndex={0}
-      className="grid-scroll no-select relative h-full w-full overflow-auto bg-white outline-none"
+      className="grid-scroll no-select relative h-full w-full overflow-auto bg-emerald-100 outline-none"
       onMouseDown={handleMouseDown}
       onMouseOver={handleMouseOver}
       onDoubleClick={handleDoubleClick}
@@ -496,7 +496,7 @@ function EditingInput({
         // otherwise let the input handle it
         e.stopPropagation()
       }}
-      className="absolute z-20 box-border border-2 border-emerald-600 bg-white px-1.5 text-[13px] leading-none text-slate-900 outline-none"
+      className="absolute z-20 box-border border-2 border-emerald-600 bg-emerald-100 px-1.5 text-[13px] leading-none text-slate-900 outline-none"
       style={{
         left,
         top,
