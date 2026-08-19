@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Thin, unobtrusive scrollbars for the grid */
+.grid-scroll::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+.grid-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+.grid-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border: 3px solid #f1f5f9;
+  border-radius: 8px;
+}
+.grid-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Prevent text selection while dragging a range */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}

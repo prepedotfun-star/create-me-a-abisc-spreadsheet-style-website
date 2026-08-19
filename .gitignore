@@ -1,0 +1,18 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-single
+.tmp-test.mjs
+*.tsbuildinfo
+
+# Editor / OS
+.DS_Store
+.vscode
+*.local
