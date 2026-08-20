@@ -51,7 +51,7 @@ export function SheetTabs({
               className={
                 'group flex shrink-0 items-center rounded-md text-[13px] transition-colors ' +
                 (active
-                  ? 'bg-white text-emerald-700 shadow-sm ring-1 ring-slate-200'
+                  ? 'bg-white text-yellow-700 shadow-sm ring-1 ring-slate-200'
                   : 'text-slate-600 hover:bg-slate-200/70')
               }
             >
@@ -65,7 +65,7 @@ export function SheetTabs({
                     if (e.key === 'Enter') commit()
                     if (e.key === 'Escape') setEditingId(null)
                   }}
-                  className="w-24 rounded-md bg-white px-2 py-1 font-medium outline-none ring-1 ring-emerald-400"
+                  className="w-24 rounded-md bg-white px-2 py-1 font-medium outline-none ring-1 ring-yellow-400"
                   spellCheck={false}
                 />
               ) : (

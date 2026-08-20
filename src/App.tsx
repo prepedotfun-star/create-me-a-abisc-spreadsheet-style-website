@@ -691,7 +691,7 @@ export default function App() {
       {/* Header */}
       <header className="flex items-center justify-between gap-3 border-b border-slate-200 bg-white px-4 py-2">
         <div className="flex items-center gap-2.5">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-yellow-400 text-slate-900">
             <GridIcon width={18} height={18} />
           </div>
           <div className="leading-tight">
@@ -737,7 +737,7 @@ export default function App() {
                 selectCell({ row: 0, col: 0 })
               }
             }}
-            className="rounded-md bg-emerald-600 px-3 py-1.5 text-[13px] font-medium text-white transition-colors hover:bg-emerald-700"
+            className="rounded-md bg-yellow-400 px-3 py-1.5 text-[13px] font-medium text-slate-900 transition-colors hover:bg-yellow-500"
           >
             Sample
           </button>

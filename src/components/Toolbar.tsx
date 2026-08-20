@@ -60,7 +60,7 @@ function Btn({
         (disabled
           ? 'cursor-not-allowed opacity-40'
           : active
-            ? 'bg-emerald-100 text-emerald-700'
+            ? 'bg-yellow-100 text-yellow-700'
             : 'hover:bg-slate-100 hover:text-slate-900')
       }
     >

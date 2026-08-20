@@ -97,7 +97,7 @@ const CellsLayer = memo(function CellsLayer({
         {colToLetter(c)}
         <span
           data-resizecol={c}
-          className="absolute right-0 top-0 h-full w-[6px] translate-x-1/2 cursor-col-resize hover:bg-emerald-400/60"
+          className="absolute right-0 top-0 h-full w-[6px] translate-x-1/2 cursor-col-resize hover:bg-yellow-400/60"
         />
       </div>,
     )
@@ -122,7 +122,7 @@ const CellsLayer = memo(function CellsLayer({
           key={c}
           data-cell={id}
           className={
-            'flex items-center overflow-hidden whitespace-nowrap border-b border-r border-emerald-200 bg-emerald-100 px-1.5 text-[13px] leading-none text-slate-800' +
+            'flex items-center overflow-hidden whitespace-nowrap border-b border-r border-yellow-200 bg-yellow-100 px-1.5 text-[13px] leading-none text-slate-800' +
             (errorCell ? ' text-red-600' : '')
           }
           style={{ width: colX[c + 1] - colX[c], height: rowHeight, ...st }}
@@ -142,7 +142,7 @@ const CellsLayer = memo(function CellsLayer({
           {r + 1}
           <span
             data-resizerow={r}
-            className="absolute bottom-0 left-0 h-[6px] w-full translate-y-1/2 cursor-row-resize hover:bg-emerald-400/60"
+            className="absolute bottom-0 left-0 h-[6px] w-full translate-y-1/2 cursor-row-resize hover:bg-yellow-400/60"
           />
         </div>
         {cells}
@@ -367,7 +367,7 @@ export function Grid(props: GridProps) {
     <div
       ref={gridRef}
       tabIndex={0}
-      className="grid-scroll no-select relative h-full w-full overflow-auto bg-emerald-100 outline-none"
+      className="grid-scroll no-select relative h-full w-full overflow-auto bg-yellow-100 outline-none"
       onMouseDown={handleMouseDown}
       onMouseOver={handleMouseOver}
       onDoubleClick={handleDoubleClick}
@@ -386,7 +386,7 @@ export function Grid(props: GridProps) {
       {/* Selection tint */}
       {(selWidth > 0 || selHeight > 0) && (
         <div
-          className="pointer-events-none absolute z-10 border-2 border-emerald-500 bg-emerald-500/10"
+          className="pointer-events-none absolute z-10 border-2 border-yellow-500 bg-yellow-500/10"
           style={{ left: selLeft, top: selTop, width: selWidth, height: selHeight }}
         />
       )}
@@ -394,7 +394,7 @@ export function Grid(props: GridProps) {
       {/* Active cell outline (white interior to distinguish anchor) */}
       {!editing && (
         <div
-          className="pointer-events-none absolute z-10 border-2 border-emerald-600"
+          className="pointer-events-none absolute z-10 border-2 border-yellow-600"
           style={{ left: aLeft, top: aTop, width: aWidth, height: aHeight }}
         />
       )}
@@ -496,7 +496,7 @@ function EditingInput({
         // otherwise let the input handle it
         e.stopPropagation()
       }}
-      className="absolute z-20 box-border border-2 border-emerald-600 bg-emerald-100 px-1.5 text-[13px] leading-none text-slate-900 outline-none"
+      className="absolute z-20 box-border border-2 border-yellow-600 bg-yellow-100 px-1.5 text-[13px] leading-none text-slate-900 outline-none"
       style={{
         left,
         top,

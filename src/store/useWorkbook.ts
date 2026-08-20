@@ -276,7 +276,7 @@ function sampleWorkbook(): Workbook {
     A9: c('Shipping'),
     D9: c('15', cur),
     A10: c('Grand Total', { bold: true }),
-    D10: c('=D7+D8+D9', { ...cur, bold: true, bg: '#dcfce7' }),
+    D10: c('=D7+D8+D9', { ...cur, bold: true, bg: '#fef9c3' }),
     F1: c('Quick stats', { bold: true, italic: true }),
     F2: c('Items'),
     G2: c('=COUNTA(A2:A5)'),
